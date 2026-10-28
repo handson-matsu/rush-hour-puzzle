@@ -1,0 +1,9 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#173c47"><title>ラッシュアワーパズル</title><link rel="stylesheet" href="style.css"></head><body>
+<main><header><div><span class="eyebrow">考える、動かす、道がひらく。</span><h1>ラッシュアワーパズル</h1></div><button id="sound" aria-pressed="false">音 OFF</button></header>
+<section class="toolbar" aria-label="問題選択"><label>難易度 <select id="level"><option value="0">初級</option><option value="1">中級</option><option value="2">上級</option></select></label><label>問題 <select id="puzzle"></select></label><div class="counter">移動回数 <strong id="count">0</strong><span>手</span></div></section>
+<p class="mission">赤い車 <b>A</b> を右の出口へ！</p>
+<div class="parking"><div id="board" aria-label="6×6の駐車場"></div><div class="exit">出口<br>→</div></div>
+<p id="status" role="status">車をドラッグして動かそう。</p>
+<nav class="actions" aria-label="ゲーム操作"><button id="undo">↶ 戻す</button><button id="reset">最初から</button><button id="hint">ヒント</button><button id="next" class="primary">次の問題 →</button></nav>
+<p class="rules">何マス動かしても、1回の移動で1手。<br>横の車は左右に、縦の車は上下に動かせます。</p><p class="keyboard">キーボード：車を選んで矢印キー。赤い車は右端でもう一度 → で脱出。</p>
+</main><dialog id="success"><div id="confetti" aria-hidden="true"></div><span class="eyebrow">CLEAR!</span><h2>脱出成功！おめでとう！</h2><div id="result"></div><p id="special"></p><button id="review">盤面を見る</button> <button id="success-next" class="primary">次の問題 →</button></dialog><script src="access-counter.js" defer></script><script type="module" src="app.js"></script></body></html>
